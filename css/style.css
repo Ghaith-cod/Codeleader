@@ -1,0 +1,215 @@
+/***********Start My Framework***********/
+
+html {
+    scroll-behavior: smooth
+}
+
+.main-color {
+    color: #32DBC6
+}
+
+.main-bg {
+    background-color: #32DBC6
+}
+
+.second-color {
+    color: beige
+}
+
+.second-bg {
+    background-color: beige
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.p {
+    font-size: 30px
+}
+
+.active {
+    background-color: #32DBC6
+}
+
+/****************************************/
+.f {
+    margin-left: 20%;
+}
+
+.side {
+    background-color: aliceblue;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 25%;
+    font-size: 25px;
+    animation: side1 1s 1;
+    display: none;
+    z-index: 100000000;
+}
+
+.side ul {
+    margin: 25% 20%;
+    line-height: 75px
+}
+
+.side ul a {
+    color: black;
+}
+
+#close {
+    margin-left: 75%;
+
+}
+
+header {
+    background-image: url(../imgs/laptop.jpg);
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative
+}
+
+.w-90 {
+    width: 90%
+}
+
+header .overlay h1 {
+    font-size: 75px;
+    padding-top: 20%;
+}
+
+.filter-img .overlay {
+    opacity: 0;
+    transition: all ease-in-out .5s;
+}
+
+.filter-img:hover .overlay {
+    opacity: 1
+}
+
+header .overlay a {
+    margin-left: 46%
+}
+
+.btn {
+    border-radius: 30px
+}
+
+.btns {}
+
+.d1,
+.d2,
+.d3,
+.d4,
+.d5,
+.d6 {
+    position: relative;
+    color: beige;
+    background-size: cover;
+    height: 400px;
+    margin-top: 20px;
+
+}
+
+.d1 {
+    background-image: url(../imgs/campaign-creators-iEiUITs149M-unsplash.jpg);
+}
+
+.d2 {
+    background-image: url(../imgs/domenico-loia-hGV2TfOh0ns-unsplash.jpg);
+}
+
+.d3 {
+    background-image: url(../imgs/christopher-gower-m_HRfLhgABo-unsplash.jpg);
+}
+
+.d4 {
+    background-image: url(../imgs/nordwood-themes-q8U1YgBaRQk-unsplash.jpg);
+}
+
+.d5 {
+    background-image: url(../imgs/mia-baker-15q2ZCDbQFU-unsplash.jpg);
+}
+
+.d6 {
+    background-image: url(../imgs/bram-naus-N1gUD_dCvJE-unsplash.jpg);
+}
+
+h3,
+h5 {
+    vertical-align: middle;
+    margin-top: 50px;
+}
+
+h3 {
+    margin-top: 30%;
+}
+
+#up {
+    padding: 5px;
+    color: #32DBC6;
+    border-radius: 50%;
+    background-color: red;
+    width: 50px;
+    font-size: 30px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid #32DBC6;
+    z-index: 99999999999999999999999;
+    display: none
+}
+
+.show {
+    animation: scale1 1s ease;
+    display: block;
+}
+
+.delete {
+    animation: scale2 1s ease;
+    display: none;
+}
+
+@keyframes side1 {
+    0% {
+        transform: scaleX(0);
+    }
+
+    100% {
+        transform: scaleX(1)
+    }
+}
+
+@keyframes scale1 {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+@keyframes scale2 {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0)
+    }
+}
